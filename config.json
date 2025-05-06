@@ -1,0 +1,60 @@
+{
+    "telegram_token": "8143467986:AAEo0IC1jwEpHXeNNIw1MmQORG-JPjU65nE",
+    "telegram_chat_id": "-1002663850031",
+    "cryptopanic_api_key": "ac5c98562407cf9d569c4c453b02f5b2b50b79ae",
+    "timeframe": "1h",
+    "min_volume_usd": 1000000,
+    "signal_threshold": 0.52,
+    "pump_price_threshold": 10.0,
+    "pump_volume_multiplier": 3.0,
+    "tp_percent": 5.0,
+    "sl_percent": 2.0,
+    "leverage": 10,
+    "meme_coins": [
+        "DOGE", "SHIB", "PEPE", "FLOKI", "WIF", "BONK", "BRETT", "BOME",
+        "MEW", "MOG", "POPCAT", "QUBIC", "PEIPEI", "TURBO", "SUN", "NEIRO",
+        "GME", "AMC", "SPX", "ZRO", "NOT", "RATS", "DOGS", "HMSTR"
+    ],
+    "meme_leverage": 5,
+    "meme_tp_percent": 3.0,
+    "atr_volatility_multiplier": 1.0,
+    "signal_expiry_hours": 12,
+    "position_size_usd": 1000,
+    "ohlcv_limit": 60,
+    "use_ml_predictions": true,
+    "ml_confidence_threshold": 0.65,
+    "ml_retrain_days": 7,
+    "min_ml_accuracy": 0.60,
+    "use_pattern_recognition": true,
+    "pattern_lookback_period": 100,
+    "pattern_weight": 2.0,
+    "default_model_type": "random_forest",
+    "supertrend_atr_period": 14,
+    "supertrend_multiplier": 3.0,
+    "indicators": {
+        "rsi": {
+            "period": 14,
+            "overbought": 70,
+            "oversold": 30
+        },
+        "macd": {
+            "fast_period": 12,
+            "slow_period": 26,
+            "signal_period": 9
+        },
+        "bollinger": {
+            "period": 20,
+            "std_dev": 2
+        },
+        "stochastic": {
+            "k_period": 14,
+            "d_period": 3,
+            "overbought": 80,
+            "oversold": 20
+        },
+        "adx": {
+            "period": 14,
+            "strong_trend": 25
+        }
+    }
+}

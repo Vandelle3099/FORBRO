@@ -1,0 +1,45 @@
+2025-05-02 18:19:07,099 - INFO - Starting ML component test...
+2025-05-02 18:19:07,106 - INFO - Loading markets from Bybit...
+2025-05-02 18:19:07,627 - ERROR - Error loading markets from Bybit: aiodns needs a SelectorEventLoop on Windows. See more: https://github.com/saghul/aiodns/issues/86
+2025-05-02 18:19:07,627 - INFO - Loaded 0 symbols
+2025-05-02 18:19:07,627 - ERROR - Failed to load markets
+2025-05-02 18:20:27,914 - INFO - Starting ML component test...
+2025-05-02 18:20:27,915 - INFO - Loading markets...
+2025-05-02 18:20:27,915 - INFO - Loaded 10 test symbols
+2025-05-02 18:20:27,916 - INFO - Example pairs: BTC/USDT, ETH/USDT, BNB/USDT, SOL/USDT, DOGE/USDT
+2025-05-02 18:20:27,916 - INFO - Loaded 10 symbols
+2025-05-02 18:20:27,917 - INFO - »нициализирована ML модель дл€ BTC/USDT (тип: random_forest)
+2025-05-02 18:20:27,952 - INFO - ћодель BTC/USDT загружена
+2025-05-02 18:20:27,952 - INFO - ѕроверка здоровь€ модели BTC/USDT успешна
+2025-05-02 18:20:27,953 - INFO - ML модель дл€ BTC/USDT в хорошем состо€нии, переобучение не требуетс€
+2025-05-02 18:20:27,953 - INFO - Successfully trained model for BTC/USDT
+2025-05-02 18:20:27,953 - INFO - Loading OHLCV data for BTC/USDT (1h)
+2025-05-02 18:20:27,954 - INFO - Generated 60 test candles for BTC/USDT
+2025-05-02 18:20:27,954 - INFO - »нициализирована ML модель дл€ BTC/USDT (тип: random_forest)
+2025-05-02 18:20:27,971 - INFO - ћодель BTC/USDT загружена
+2025-05-02 18:20:27,972 - INFO - Loading OHLCV data for BTC/USDT (1h)
+2025-05-02 18:20:27,973 - INFO - Generated 60 test candles for BTC/USDT
+2025-05-02 18:20:28,056 - INFO - ѕредсказание дл€ BTC/USDT: down (уверенность: 0.56)
+2025-05-02 18:20:28,056 - WARNING - No prediction available for BTC/USDT
+2025-05-02 18:20:28,056 - INFO - Ќачало пакетного обучени€ ML-моделей дл€ 3 символов
+2025-05-02 18:20:28,057 - INFO - Loading OHLCV data for BTC/USDT (1h)
+2025-05-02 18:20:28,059 - INFO - Generated 240 test candles for BTC/USDT
+2025-05-02 18:20:28,060 - INFO - Loading OHLCV data for ETH/USDT (1h)
+2025-05-02 18:20:28,062 - INFO - Generated 240 test candles for ETH/USDT
+2025-05-02 18:20:28,063 - INFO - Loading OHLCV data for BNB/USDT (1h)
+2025-05-02 18:20:28,065 - INFO - Generated 240 test candles for BNB/USDT
+2025-05-02 18:20:28,066 - INFO - »нициализирована ML модель дл€ BTC/USDT (тип: random_forest)
+2025-05-02 18:20:28,086 - INFO - ћодель BTC/USDT загружена
+2025-05-02 18:20:28,097 - INFO - ѕроверка здоровь€ модели BTC/USDT успешна
+2025-05-02 18:20:28,101 - INFO - ML модель дл€ BTC/USDT в хорошем состо€нии, переобучение не требуетс€
+2025-05-02 18:20:28,103 - INFO - »нициализирована ML модель дл€ ETH/USDT (тип: random_forest)
+2025-05-02 18:20:28,134 - INFO - ћодель ETH/USDT загружена
+2025-05-02 18:20:28,137 - INFO - ѕроверка здоровь€ модели ETH/USDT успешна
+2025-05-02 18:20:28,138 - INFO - ML модель дл€ ETH/USDT в хорошем состо€нии, переобучение не требуетс€
+2025-05-02 18:20:28,139 - INFO - »нициализирована ML модель дл€ BNB/USDT (тип: random_forest)
+2025-05-02 18:20:28,185 - INFO - ћодель BNB/USDT загружена
+2025-05-02 18:20:28,186 - INFO - ѕроверка здоровь€ модели BNB/USDT успешна
+2025-05-02 18:20:28,186 - INFO - ML модель дл€ BNB/USDT в хорошем состо€нии, переобучение не требуетс€
+2025-05-02 18:20:28,186 - INFO - «авершено обучение ML-моделей: 3/3 успешно
+2025-05-02 18:20:28,187 - INFO - Batch training completed: 3/3 successful
+2025-05-02 18:20:28,187 - INFO - ML component test completed

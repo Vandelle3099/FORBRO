@@ -1,0 +1,345 @@
+2025-05-02 17:45:49,043 - INFO - Reading signal files from logs/
+2025-05-02 17:45:49,044 - INFO - Found 2 signal files
+2025-05-02 17:45:49,054 - INFO - Successfully read signals_2025-04-25.csv with 8 rows
+2025-05-02 17:45:49,056 - INFO - Successfully read signals_2025-04-26.csv with 8 rows
+2025-05-02 17:45:49,056 - INFO - Total signals loaded: 16
+2025-05-02 17:45:49,057 - INFO - Preparing data...
+2025-05-02 17:45:49,075 - INFO - Data preparation completed successfully
+2025-05-02 17:45:49,075 - INFO - Filtering anomalies...
+2025-05-02 17:45:49,080 - INFO - Removed 0 anomalous signals
+2025-05-02 17:45:49,081 - INFO - Remaining signals after filtering: 16
+2025-05-02 17:45:49,085 - INFO - Processing 4 unique symbols
+2025-05-02 17:45:52,210 - INFO - ДИАГНОСТИКА: Запрашиваем данные OHLC
+2025-05-02 17:45:52,211 - INFO - ДИАГНОСТИКА: Всего уникальных пар: 4
+2025-05-02 17:45:52,211 - INFO - ДИАГНОСТИКА: Период: c 2025-04-25 10:00 по 2025-04-27 17:00
+2025-05-02 17:45:52,211 - INFO - Обработка 4 уникальных пар:
+2025-05-02 17:45:52,211 - INFO -   Пары 1-4: BTC/USDT, ETH/USDT, DOGE/USDT, SOL/USDT
+2025-05-02 17:45:52,211 - INFO - Загрузка OHLC данных для 4 пар...
+2025-05-02 17:45:52,211 - INFO - ДИАГНОСТИКА: Тестовый запрос для BTC/USDT
+2025-05-02 17:45:52,212 - INFO - ДИАГНОСТИКА: URL запроса: https://api.bybit.com/v5/market/kline
+2025-05-02 17:45:52,212 - INFO - ДИАГНОСТИКА: Параметры: category=linear, symbol=BTCUSDT, interval=60, start=1745575200000, end=1745773200000
+2025-05-02 17:45:52,212 - INFO - Прогресс: 25.0% (1/4 пар)
+2025-05-02 17:45:52,212 - INFO - Обработка пары: BTC/USDT (1/4)
+2025-05-02 17:45:52,758 - INFO - Получено 56 свечей для BTC/USDT
+2025-05-02 17:45:52,759 - INFO - Получены данные для BTC/USDT: 56 свечей
+2025-05-02 17:45:52,760 - INFO - Обработка пары: ETH/USDT (2/4)
+2025-05-02 17:45:53,278 - INFO - Получено 56 свечей для ETH/USDT
+2025-05-02 17:45:53,278 - INFO - Получены данные для ETH/USDT: 56 свечей
+2025-05-02 17:45:53,278 - INFO - Обработка пары: DOGE/USDT (3/4)
+2025-05-02 17:45:53,763 - INFO - Получено 56 свечей для DOGE/USDT
+2025-05-02 17:45:53,764 - INFO - Получены данные для DOGE/USDT: 56 свечей
+2025-05-02 17:45:53,765 - INFO - Прогресс: 100.0% (4/4 пар)
+2025-05-02 17:45:53,766 - INFO - Обработка пары: SOL/USDT (4/4)
+2025-05-02 17:45:54,268 - INFO - Получено 56 свечей для SOL/USDT
+2025-05-02 17:45:54,268 - INFO - Получены данные для SOL/USDT: 56 свечей
+2025-05-02 17:45:54,268 - INFO - ДИАГНОСТИКА: Итог загрузки OHLC данных:
+2025-05-02 17:45:54,268 - INFO - ДИАГНОСТИКА: - Всего запрошено пар: 4
+2025-05-02 17:45:54,268 - INFO - ДИАГНОСТИКА: - Получены данные для: 4 пар
+2025-05-02 17:45:54,269 - INFO - ДИАГНОСТИКА: - Нет данных для: 0 пар
+2025-05-02 17:45:54,269 - INFO - Processing signals to determine outcomes...
+2025-05-02 17:45:54,291 - INFO - 
+=== Signal Analysis Results ===
+2025-05-02 17:45:54,291 - INFO - Total signals analyzed: 16
+2025-05-02 17:45:54,292 - INFO - 
+--- Results by Category ---
+2025-05-02 17:45:54,293 - INFO - TP signals: 7 (43.8%)
+2025-05-02 17:45:54,293 - INFO - Examples of TP signals:
+2025-05-02 17:45:54,293 - INFO -   BTC/USDT long entry=50000.0000 TP hit after 0.0h
+2025-05-02 17:45:54,293 - INFO -   ETH/USDT short entry=3000.0000 TP hit after 0.0h
+2025-05-02 17:45:54,294 - INFO -   DOGE/USDT long entry=0.1500 TP hit after 0.0h
+2025-05-02 17:45:54,294 - INFO -   BTC/USDT long entry=51500.0000 TP hit after 0.0h
+2025-05-02 17:45:54,294 - INFO -   ETH/USDT short entry=3300.0000 TP hit after 0.0h
+2025-05-02 17:45:54,294 - INFO - 
+SL signals: 8 (50.0%)
+2025-05-02 17:45:54,294 - INFO - Examples of SL signals:
+2025-05-02 17:45:54,295 - INFO -   BTC/USDT short entry=51000.0000 SL hit after 0.0h
+2025-05-02 17:45:54,295 - INFO -   ETH/USDT long entry=3100.0000 SL hit after 0.0h
+2025-05-02 17:45:54,295 - INFO -   DOGE/USDT short entry=0.1600 SL hit after 0.0h
+2025-05-02 17:45:54,295 - INFO -   SOL/USDT long entry=155.0000 SL hit after 4.0h
+2025-05-02 17:45:54,295 - INFO -   BTC/USDT short entry=52000.0000 SL hit after 0.0h
+2025-05-02 17:45:54,296 - INFO - 
+Pending signals: 1 (6.2%)
+2025-05-02 17:45:54,296 - INFO - Examples of Pending signals:
+2025-05-02 17:45:54,296 - INFO -   SOL/USDT short entry=150.0000
+2025-05-02 17:45:54,297 - INFO - 
+Overall win rate: 46.67%
+2025-05-02 17:45:54,297 - INFO - Average time to TP: 0.0h
+2025-05-02 17:45:54,297 - INFO - Average time to SL: 0.5h
+2025-05-02 17:45:54,297 - INFO - 
+--- Analysis by Signal Type ---
+2025-05-02 17:45:54,298 - INFO - LONG: 8 signals, 50.0% win rate, avg time 0.5h
+2025-05-02 17:45:54,298 - INFO - SHORT: 7 signals, 42.9% win rate, avg time 0.0h
+2025-05-02 17:45:54,299 - INFO - 
+--- Analysis by Symbol ---
+2025-05-02 17:45:54,299 - INFO - BTC/USDT: 4 signals, 50.0% win rate, avg time 0.0h
+2025-05-02 17:45:54,300 - INFO - ETH/USDT: 4 signals, 50.0% win rate, avg time 0.0h
+2025-05-02 17:45:54,300 - INFO - DOGE/USDT: 4 signals, 50.0% win rate, avg time 0.0h
+2025-05-02 17:45:54,300 - INFO - SOL/USDT: 3 signals, 33.3% win rate, avg time 1.3h
+2025-05-02 17:45:54,554 - ERROR - Error in main function: [Errno 22] Invalid argument: 'signals_history_with_win.xlsx'
+Traceback (most recent call last):
+  File "C:\Users\vande\Desktop\vandelle_bot_cursor\analyze_signals_history.py", line 302, in main
+    signals_df.to_excel(output_file, index=False)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vande\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\vande\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\generic.py", line 2417, in to_excel
+    formatter.write(
+    ~~~~~~~~~~~~~~~^
+        excel_writer,
+        ^^^^^^^^^^^^^
+    ...<6 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vande\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\formats\excel.py", line 943, in write
+    writer = ExcelWriter(
+        writer,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "C:\Users\vande\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 61, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        path,
+        ^^^^^
+    ...<3 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vande\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\excel\_base.py", line 1246, in __init__
+    self._handles = get_handle(
+                    ~~~~~~~~~~^
+        path, mode, storage_options=storage_options, is_text=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vande\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+OSError: [Errno 22] Invalid argument: 'signals_history_with_win.xlsx'
+2025-05-02 18:21:50,957 - INFO - Loading signal files from logs/
+2025-05-02 18:21:50,958 - INFO - Found 2 signal files
+2025-05-02 18:21:50,975 - INFO - Loaded total of 16 signals
+2025-05-02 18:21:51,002 - INFO - Analyzing signal results...
+2025-05-02 18:21:51,058 - INFO - Analysis completed:
+2025-05-02 18:21:51,059 - INFO - Total signals: 16
+2025-05-02 18:21:51,060 - INFO - Completed signals: 16
+2025-05-02 18:21:51,060 - INFO - Win rate: 50.00%
+2025-05-02 18:21:51,066 - INFO - 
+Results by symbol:
+2025-05-02 18:21:51,066 - INFO -             win      time_to_target
+          count mean           mean
+symbol                             
+BTC/USDT      4  0.5          0.364
+DOGE/USDT     4  0.5          0.364
+ETH/USDT      4  0.5          0.364
+SOL/USDT      4  0.5          0.364
+2025-05-02 18:21:51,431 - INFO - Results saved to signals_history_with_win.xlsx
+2025-05-02 18:23:08,041 - INFO - Loading signal files from logs/
+2025-05-02 18:23:08,042 - INFO - Found 2 signal files
+2025-05-02 18:23:08,050 - INFO - Loaded total of 16 signals
+2025-05-02 18:23:08,075 - INFO - Analyzing signal results...
+2025-05-02 18:23:08,147 - INFO - 
+Analysis completed:
+2025-05-02 18:23:08,148 - INFO - Total signals: 16
+2025-05-02 18:23:08,148 - INFO - Completed signals: 16
+2025-05-02 18:23:08,148 - INFO - Win rate: 50.00%
+2025-05-02 18:23:08,150 - INFO - 
+Profitability metrics:
+2025-05-02 18:23:08,150 - INFO - Average profit: 9.36%
+2025-05-02 18:23:08,150 - INFO - Average loss: 3.59%
+2025-05-02 18:23:08,150 - INFO - Profit factor: 2.61
+2025-05-02 18:23:08,162 - INFO - 
+Results by symbol:
+2025-05-02 18:23:08,162 - INFO -             win      time_to_target profit_loss         market_volume price_volatility
+          count mean           mean        mean     std          mean             mean
+symbol                                                                                
+BTC/USDT      4  0.5          0.386       2.500   5.705      1008.582            1.882
+DOGE/USDT     4  0.5          0.386       3.425  10.966       977.778            2.057
+ETH/USDT      4  0.5          0.386       2.427   6.667       983.683            1.717
+SOL/USDT      4  0.5          0.386       3.185   7.354      1004.937            1.798
+2025-05-02 18:23:08,185 - INFO - 
+Results by signal type:
+2025-05-02 18:23:08,185 - INFO -         win      profit_loss       
+      count mean        mean    std
+type                               
+long      8  0.5       3.377  7.542
+short     8  0.5       2.392  7.120
+2025-05-02 18:23:08,203 - ERROR - Error creating analysis plots: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+2025-05-02 18:23:08,709 - INFO - Results saved to signals_history_with_win.xlsx
+2025-05-02 18:24:56,796 - INFO - Loading signal files from logs/
+2025-05-02 18:24:56,797 - INFO - Found 2 signal files
+2025-05-02 18:24:56,804 - INFO - Loaded total of 16 signals
+2025-05-02 18:24:56,837 - INFO - Analyzing signal results...
+2025-05-02 18:24:56,891 - INFO - 
+Analysis completed:
+2025-05-02 18:24:56,891 - INFO - Total signals: 16
+2025-05-02 18:24:56,891 - INFO - Completed signals: 16
+2025-05-02 18:24:56,891 - INFO - Win rate: 50.00%
+2025-05-02 18:24:56,893 - INFO - 
+Profitability metrics:
+2025-05-02 18:24:56,893 - INFO - Average profit: 8.59%
+2025-05-02 18:24:56,893 - INFO - Average loss: 3.85%
+2025-05-02 18:24:56,894 - INFO - Profit factor: 2.23
+2025-05-02 18:24:56,897 - INFO - 
+Results by symbol:
+2025-05-02 18:24:56,897 - INFO -             win      time_to_target profit_loss         market_volume price_volatility
+          count mean           mean        mean     std          mean             mean
+symbol                                                                                
+BTC/USDT      4  0.5          0.416       0.456   4.046      1025.592            1.992
+DOGE/USDT     4  0.5          0.416       3.425  10.966       996.857            2.115
+ETH/USDT      4  0.5          0.416       2.427   6.667      1038.846            2.175
+SOL/USDT      4  0.5          0.416       3.185   7.354      1015.101            1.987
+2025-05-02 18:24:56,937 - INFO - 
+Results by signal type:
+2025-05-02 18:24:56,937 - INFO -         win       profit_loss       
+      count  mean        mean    std
+type                                
+long      8  0.25       0.899  7.442
+short     8  0.75       3.848  6.598
+2025-05-02 18:25:00,779 - INFO - Analysis plots saved in 'analysis_plots' directory
+2025-05-02 18:25:01,178 - ERROR - Error saving results: [Errno 22] Invalid argument: 'signals_history_with_win.xlsx'
+2025-05-02 18:31:01,990 - INFO - Loading signal files from logs/
+2025-05-02 18:31:01,991 - INFO - Found 2 signal files
+2025-05-02 18:31:02,015 - INFO - Loaded total of 16 signals
+2025-05-02 18:31:02,048 - INFO - Analyzing signal results...
+2025-05-02 18:31:02,101 - INFO - 
+Analysis completed:
+2025-05-02 18:31:02,102 - INFO - Total signals: 16
+2025-05-02 18:31:02,102 - INFO - Completed signals: 16
+2025-05-02 18:31:02,102 - INFO - Win rate: 50.00%
+2025-05-02 18:31:02,104 - INFO - 
+Profitability metrics:
+2025-05-02 18:31:02,104 - INFO - Average profit: 8.59%
+2025-05-02 18:31:02,104 - INFO - Average loss: 3.85%
+2025-05-02 18:31:02,104 - INFO - Profit factor: 2.23
+2025-05-02 18:31:02,112 - INFO - 
+Results by symbol:
+2025-05-02 18:31:02,112 - INFO -             win      time_to_target profit_loss         market_volume price_volatility
+          count mean           mean        mean     std          mean             mean
+symbol                                                                                
+BTC/USDT      4  0.5          0.517       0.456   4.046       987.691            2.009
+DOGE/USDT     4  0.5          0.517       3.425  10.966       995.428            2.014
+ETH/USDT      4  0.5          0.517       2.427   6.667       990.334            1.925
+SOL/USDT      4  0.5          0.517       3.185   7.354       937.877            1.931
+2025-05-02 18:31:02,131 - INFO - 
+Results by signal type:
+2025-05-02 18:31:02,131 - INFO -         win       profit_loss       
+      count  mean        mean    std
+type                                
+long      8  0.25       0.899  7.442
+short     8  0.75       3.848  6.598
+2025-05-02 18:31:04,434 - INFO - Analysis plots saved in 'analysis_plots' directory
+2025-05-02 18:31:04,726 - INFO - Results saved to signals_history_with_win.xlsx
+2025-05-02 18:33:32,112 - INFO - Reading signal files from logs/
+2025-05-02 18:33:32,114 - INFO - Found 2 signal files
+2025-05-02 18:33:32,121 - INFO - Successfully read signals_2025-04-25.csv with 8 rows
+2025-05-02 18:33:32,130 - INFO - Successfully read signals_2025-04-26.csv with 8 rows
+2025-05-02 18:33:32,132 - INFO - Total signals loaded: 16
+2025-05-02 18:33:32,132 - INFO - Preparing data...
+2025-05-02 18:33:32,137 - INFO - Data preparation completed successfully
+2025-05-02 18:33:32,138 - INFO - Filtering anomalies...
+2025-05-02 18:33:32,142 - INFO - Removed 0 anomalous signals
+2025-05-02 18:33:32,142 - INFO - Remaining signals after filtering: 16
+2025-05-02 18:33:32,144 - INFO - Processing 4 unique symbols
+2025-05-02 18:33:34,560 - INFO - ДИАГНОСТИКА: Запрашиваем данные OHLC
+2025-05-02 18:33:34,560 - INFO - ДИАГНОСТИКА: Всего уникальных пар: 4
+2025-05-02 18:33:34,560 - INFO - ДИАГНОСТИКА: Период: c 2025-04-25 10:00 по 2025-04-27 17:00
+2025-05-02 18:33:34,560 - INFO - Обработка 4 уникальных пар:
+2025-05-02 18:33:34,561 - INFO -   Пары 1-4: BTC/USDT, ETH/USDT, DOGE/USDT, SOL/USDT
+2025-05-02 18:33:34,561 - INFO - Загрузка OHLC данных для 4 пар...
+2025-05-02 18:33:34,562 - INFO - ДИАГНОСТИКА: Тестовый запрос для BTC/USDT
+2025-05-02 18:33:34,562 - INFO - ДИАГНОСТИКА: URL запроса: https://api.bybit.com/v5/market/kline
+2025-05-02 18:33:34,562 - INFO - ДИАГНОСТИКА: Параметры: category=linear, symbol=BTCUSDT, interval=60, start=1745575200000, end=1745773200000
+2025-05-02 18:33:34,562 - INFO - Прогресс: 25.0% (1/4 пар)
+2025-05-02 18:33:34,562 - INFO - Обработка пары: BTC/USDT (1/4)
+2025-05-02 18:33:35,212 - INFO - Получено 56 свечей для BTC/USDT
+2025-05-02 18:33:35,213 - INFO - Получены данные для BTC/USDT: 56 свечей
+2025-05-02 18:33:35,213 - INFO - Обработка пары: ETH/USDT (2/4)
+2025-05-02 18:33:35,681 - INFO - Получено 56 свечей для ETH/USDT
+2025-05-02 18:33:35,682 - INFO - Получены данные для ETH/USDT: 56 свечей
+2025-05-02 18:33:35,682 - INFO - Обработка пары: DOGE/USDT (3/4)
+2025-05-02 18:33:36,161 - INFO - Получено 56 свечей для DOGE/USDT
+2025-05-02 18:33:36,162 - INFO - Получены данные для DOGE/USDT: 56 свечей
+2025-05-02 18:33:36,162 - INFO - Прогресс: 100.0% (4/4 пар)
+2025-05-02 18:33:36,162 - INFO - Обработка пары: SOL/USDT (4/4)
+2025-05-02 18:33:36,677 - INFO - Получено 56 свечей для SOL/USDT
+2025-05-02 18:33:36,678 - INFO - Получены данные для SOL/USDT: 56 свечей
+2025-05-02 18:33:36,678 - INFO - ДИАГНОСТИКА: Итог загрузки OHLC данных:
+2025-05-02 18:33:36,678 - INFO - ДИАГНОСТИКА: - Всего запрошено пар: 4
+2025-05-02 18:33:36,678 - INFO - ДИАГНОСТИКА: - Получены данные для: 4 пар
+2025-05-02 18:33:36,678 - INFO - ДИАГНОСТИКА: - Нет данных для: 0 пар
+2025-05-02 18:33:36,679 - INFO - Processing signals to determine outcomes...
+2025-05-02 18:33:36,699 - INFO - 
+=== Signal Analysis Results ===
+2025-05-02 18:33:36,700 - INFO - Total signals analyzed: 16
+2025-05-02 18:33:36,701 - INFO - 
+--- Results by Category ---
+2025-05-02 18:33:36,701 - INFO - TP signals: 7 (43.8%)
+2025-05-02 18:33:36,701 - INFO - Examples of TP signals:
+2025-05-02 18:33:36,701 - INFO -   BTC/USDT long entry=50000.0000 TP hit after 0.0h
+2025-05-02 18:33:36,702 - INFO -   ETH/USDT short entry=3000.0000 TP hit after 0.0h
+2025-05-02 18:33:36,702 - INFO -   DOGE/USDT long entry=0.1500 TP hit after 0.0h
+2025-05-02 18:33:36,702 - INFO -   BTC/USDT long entry=51500.0000 TP hit after 0.0h
+2025-05-02 18:33:36,702 - INFO -   ETH/USDT short entry=3300.0000 TP hit after 0.0h
+2025-05-02 18:33:36,702 - INFO - 
+SL signals: 8 (50.0%)
+2025-05-02 18:33:36,703 - INFO - Examples of SL signals:
+2025-05-02 18:33:36,703 - INFO -   BTC/USDT short entry=51000.0000 SL hit after 0.0h
+2025-05-02 18:33:36,703 - INFO -   ETH/USDT long entry=3100.0000 SL hit after 0.0h
+2025-05-02 18:33:36,704 - INFO -   DOGE/USDT short entry=0.1600 SL hit after 0.0h
+2025-05-02 18:33:36,704 - INFO -   SOL/USDT long entry=155.0000 SL hit after 4.0h
+2025-05-02 18:33:36,704 - INFO -   BTC/USDT short entry=52000.0000 SL hit after 0.0h
+2025-05-02 18:33:36,704 - INFO - 
+Pending signals: 1 (6.2%)
+2025-05-02 18:33:36,704 - INFO - Examples of Pending signals:
+2025-05-02 18:33:36,705 - INFO -   SOL/USDT short entry=150.0000
+2025-05-02 18:33:36,705 - INFO - 
+Overall win rate: 46.67%
+2025-05-02 18:33:36,706 - INFO - Average time to TP: 0.0h
+2025-05-02 18:33:36,706 - INFO - Average time to SL: 0.5h
+2025-05-02 18:33:36,706 - INFO - 
+--- Analysis by Signal Type ---
+2025-05-02 18:33:36,706 - INFO - LONG: 8 signals, 50.0% win rate, avg time 0.5h
+2025-05-02 18:33:36,707 - INFO - SHORT: 7 signals, 42.9% win rate, avg time 0.0h
+2025-05-02 18:33:36,707 - INFO - 
+--- Analysis by Symbol ---
+2025-05-02 18:33:36,708 - INFO - BTC/USDT: 4 signals, 50.0% win rate, avg time 0.0h
+2025-05-02 18:33:36,708 - INFO - ETH/USDT: 4 signals, 50.0% win rate, avg time 0.0h
+2025-05-02 18:33:36,709 - INFO - DOGE/USDT: 4 signals, 50.0% win rate, avg time 0.0h
+2025-05-02 18:33:36,709 - INFO - SOL/USDT: 3 signals, 33.3% win rate, avg time 1.3h
+2025-05-02 18:33:36,909 - INFO - 
+Results saved to signals_history_with_win.xlsx
+2025-05-06 11:09:02,457 - INFO - Loading signal files from logs/
+2025-05-06 11:09:02,457 - INFO - Found 2 signal files
+2025-05-06 11:09:02,473 - INFO - Loaded total of 16 signals
+2025-05-06 11:09:02,487 - INFO - Analyzing signal results...
+2025-05-06 11:09:02,515 - INFO - 
+Analysis completed:
+2025-05-06 11:09:02,515 - INFO - Total signals: 16
+2025-05-06 11:09:02,515 - INFO - Completed signals: 16
+2025-05-06 11:09:02,516 - INFO - Win rate: 50.00%
+2025-05-06 11:09:02,516 - INFO - 
+Profitability metrics:
+2025-05-06 11:09:02,517 - INFO - Average profit: 9.36%
+2025-05-06 11:09:02,517 - INFO - Average loss: 3.59%
+2025-05-06 11:09:02,517 - INFO - Profit factor: 2.61
+2025-05-06 11:09:02,520 - INFO - 
+Results by symbol:
+2025-05-06 11:09:02,520 - INFO -             win      time_to_target profit_loss         market_volume price_volatility
+          count mean           mean        mean     std          mean             mean
+symbol                                                                                
+BTC/USDT      4  0.5          0.151       2.500   5.705      1002.606            1.929
+DOGE/USDT     4  0.5          0.151       3.425  10.966      1017.447            2.010
+ETH/USDT      4  0.5          0.151       2.427   6.667      1011.047            1.976
+SOL/USDT      4  0.5          0.151       3.185   7.354      1001.823            1.991
+2025-05-06 11:09:02,529 - INFO - 
+Results by signal type:
+2025-05-06 11:09:02,529 - INFO -         win      profit_loss       
+      count mean        mean    std
+type                               
+long      8  0.5       3.377  7.542
+short     8  0.5       2.392  7.120
+2025-05-06 11:09:04,033 - INFO - Analysis plots saved in 'analysis_plots' directory
+2025-05-06 11:09:04,250 - INFO - Results saved to signals_history_with_win.xlsx
